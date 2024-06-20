@@ -9,8 +9,9 @@ class Customer{
     {
     }
 
-    public function sayHello(string $name):string{
-        return "Hello $name, My name is $name";
+    public function sayHello(string $name = "Guest"):string
+    {
+        return "Hello $name, My name is $this->name";
 
     }
 }
